@@ -15,10 +15,10 @@ my_info = {
 def home():
     return render_template('template1.html')
 
-@app.route('/page2')
+@app.route('/blog1')
 def p2():
     return render_template('blog1.html', my_list=my_info)
 
-@app.route('/page3')
+@app.route('/blog2')
 def p3():
     return render_template('blog2.html', my_list=my_info)
