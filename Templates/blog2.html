@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <style>
+        h1 {
+            color: cornflowerblue;
+            font-size: 32px;
+            font-family: "Courier New";
+        }
+        body {
+            background-color: lavender;
+        }
+        .thumbnail-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .unstyled-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        }
+    </style>
+
+
+  <title>My Blog</title>
+</head>
+<body>
+    <h1>Welcome to Blog 2</h1>
+
+    <div class="unstyled-list">
+        <ul>
+
+            {% for item in my_list['content2'] %}
+                <simple> {{ item }} </simple>
+            {% endfor %}
+        </ul>
+        <img src="https://lh3.googleusercontent.com/pw/ADCreHeoBp0sVZCFjM-xDMubvCbAeJKWW_Peamhu5ruFHcAk9Msg8Sl13YZi170INkP5LroOTmDYPSA5RHvHkrY6U7XxUqQrK2x-UkEtgFFMxh1Ys9XzPPkJPYPYvuoONWdOL6JwmAbIXOkwvbAHWzlfFbUu=w1468-h1102-s-no-gm?authuser=0" class="img-thumbnail thumbnail-image"/>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# ignore files with .png
+*__pycache__
+*.png
+*.jpg
+
+# ignore files from Static directory
+Static/*
+
+# ignore .DS_Store files
+.DS_Store
+
+
+

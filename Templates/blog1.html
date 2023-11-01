@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <style>
+        h1 {
+            color: cornflowerblue;
+            font-size: 32px;
+            font-family: "Courier New";
+        }
+        body {
+            background-color: lavender;
+        }
+        .thumbnail-image{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+  <title>My Blog</title>
+</head>
+<body>
+    <h1>Blog 1</h1>
+
+    <div class="text-center">
+        <ul>
+            {% for item in my_list['content1'] %}
+                <comment> {{ item}} </comment>
+            {% endfor %}
+        </ul>
+        <img src="https://lh3.googleusercontent.com/pw/ADCreHdadsNKEfgw2jJ-zz8KQ0Y8g7UmKHRsV0Cql9KC3NxvvAWtoY4rQbOvV1p4JlAGV9lTBPW-Lo7CNULXvjTuivLc_W-PrIPuCerGmW1kWNiHwBwDtFFgx1XGlDmrCcv6YGG580hYHBjk1eFrLZKmg1c6=w1038-h1384-s-no-gm?authuser=0" class="img-thumbnail thumbnail-image"/>
+
+    </div>
+</body>
+</html>
